@@ -5,92 +5,105 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Контакты</title>
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+   <title>Contacts</title>
 </head>
 
 <body>
 
-   <div class="upper">
-      <div class="upper__content container">
-         <div class="menu">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="index.html"><img src="img/logo.svg" alt="Main"></a>
             <a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a>
          </div>
-         <div class="upper__info">
-            <h2 class="upper__heading">Contact Us</h2>
-            <p class="upper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-               incididunt ut
-               labore et dolore magna aliqua. </p>
-         </div>
-      </div>
-   </div>
+      </header>
 
-   <div class="stuff">
-      <div class="stuff__content container">
-         <div class="contacts">
-            <img src="img/popug.jpg" alt="Попугай" width="300">
-            <h4 class="heading4">Address</h4>
-            <p class="text">Lorem.</p>
-
-            <h4 class="heading4">Phone</h4>
-            <ul>
-               <li>89200131511</li>
-               <li>89999999999</li>
-            </ul>
-
-            <h4 class="heading4">Online service</h4>
-            <ul>
-               <li><a href="mailto:maxskokov4@gmail.com">maxskokov4@gmail.com</a></li>
-               <li><a href="https://gb.ru">GeekBrains</a></li>
-            </ul>
+      <main class="main">
+         <div class="upper">
+            <div class="upper__container">
+               <h2 class="upper__title">Contact Us</h2>
+               <p class="upper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. </p>
+            </div>
          </div>
-         <div class="massage">
-            <h4 class="heading4">Send us message</h4>
-            <form action="#">
-               Full Name <input class="message" type="text" placeholder="Иван"><br>
-               Email <input class="message" type="email" placeholder="example@mail.ru"><br>
-               Message <br>
-               <textarea class="message" cols="30" rows="5"></textarea><br>
-               <button class="button" type="submit">Submit</button>
-               <button class="button" type="reset">Reset</button>
-            </form>
-         </div>
-      </div>
-   </div>
 
-   <div class="map container">
-      <br>
-      <script type="text/javascript" charset="utf-8" async
-         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77e0a0ca86e2743c03a508942932f1d3e550b389b5edc1fdd9088e29c314f240&amp;width=100%&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
-      <br>
-   </div>
+         <div class="linkage">
+            <div class="linkage__container">
+               <div class="addres">
+                  <div class="addres__image">
+                     <img class="addres__img" src="img/addres-img.png" alt="addres image">
+                  </div>
+                  <div class="addres__info">
+                     <h4 class="linkage__title">ADDRESS</h4>
+                     <p class="addres__text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+                     <h4 class="linkage__title">PHONE</h4>
+                     <ul class="addres__phone">
+                        <li class="phone__number list__item">+7-812-7313-4321</li>
+                        <li class="phone__number list__item">+7-817-0000-1234</li>
+                     </ul>
+                     <h4 class="linkage__title">ONLINE SERVICE</h4>
+                     <ul class="addres__service">
+                        <li class="service__link list__item site-link"><a href="https://gb.ru">GeekBrains</a></li>
+                        <li class="service__link list__item mail-link"><a
+                              href="mailto:hello.site@gmail.com">hello.site@gmail.com</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="message">
+                  <h4 class="linkage__title linkage__title__margin">SEND US MESSAGE</h4>
+                  <form class="message__form" action="#">
+                     <span class="message__text">Full Name</span> <br>
+                     <input class="message__input" type="text" placeholder="Your Name"><br>
+                     <span class="message__text">Email</span> <br>
+                     <input class="message__input" type="email" placeholder="Your Email"><br>
+                     <span class="message__text">Message</span> <br>
+                     <textarea class="message__input message__input__text" placeholder="Your Message"></textarea><br>
+                     <button class="button message__button" type="submit">SUBMIT</button>
+                  </form>
+               </div>
+            </div>
+         </div>
 
-   <div class="footer">
-      <div class="footer__entry container">
-         <div class="footer__work">
-            <h3 class="footer__heading">Intersted to woek
-               with our team?</h3>
-            <p class="text footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               tempor
-               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+         <div class="location">
+            <div class="location__container">
+               <div class="location__map">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d476358.2607807231!2d44.09481723795651!3d56.315227122572665!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1647094062556!5m2!1sru!2sru"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
          </div>
-         <a href="#" class="footer__button">Let’s Talk</a>
-      </div>
-      <hr class="footer__line">
-      <div class="footer__content container">
-         <ol class="footer__info">
-            <li class="text footer__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li class="text footer__info__text">89200131511</li>
-            <li class="text footer__info__text">maxskokov4@gmail.com</li>
-         </ol>
-         <div class="copy">
-            <p class="text copy__text">2021 All rights reserved.</p>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__start">
+               <div class="footer__work">
+                  <h3 class="main__title footer__title">Intersted to work
+                     with our team?</h3>
+                  <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor
+                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+               </div>
+               <a href="#" class="button footer__button">Let’s Talk</a>
+            </div>
          </div>
-      </div>
+         <hr class="footer__line">
+         <div class="footer__container">
+            <div class="footer__end">
+               <ol class="footer__info">
+                  <li class="footer__info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                  <li class="footer__info__text">+7-812-7313-4321</li>
+                  <li class="footer__info__text">hello.site@gmail.com</li>
+               </ol>
+               <p class="copy">2021 All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
    </div>
 
 </body>
